@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Inicio from './Home/inicio'
 
 class App extends Component {
   render() {
@@ -10,9 +11,7 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Jogo de Perguntas e Respostas</h1>
         </header>
-        <p className="App-intro">
-            Edit <code>src/App.js</code> and save to reload.
-        </p>
+        <Inicio/>
       </div>
     );
   }
