@@ -1,10 +1,6 @@
 import React, {Component} from 'react'
-import {Grid, Segment, Header, Icon, Container} from 'semantic-ui-react'
-
-const tamanho = {
-    width: 175,
-    heigth: 175
-}
+import {Grid, Container} from 'semantic-ui-react';
+import Categoria from "./categoria";
 
 class Categorias extends Component {
     render(){
@@ -13,91 +9,14 @@ class Categorias extends Component {
                 <h2>Lista de Categorias</h2>
                 <p>Selecione a categoria que deseja jogar:</p>
                 <Container>
-                    <Grid columns={5}>
-                        <Grid.Row>
-                            <Grid.Column>
-                                <Segment circular style={tamanho}>
-                                    <Header as='h2'>
-                                        Esportes
-                                        <Header.Subheader><Icon name='football ball'/></Header.Subheader>
-                                    </Header>
-                                </Segment>
-                            </Grid.Column>
-                            <Grid.Column>
-                                <Segment circular style={tamanho}>
-                                    <Header as='h2'>
-                                        Música
-                                        <Header.Subheader><Icon name='music'/></Header.Subheader>
-                                    </Header>
-                                </Segment>
-                            </Grid.Column>
-                            <Grid.Column>
-                                <Segment circular style={tamanho}>
-                                    <Header as='h2'>
-                                        Mundo
-                                        <Header.Subheader><Icon name='globe'/></Header.Subheader>
-                                    </Header>
-                                </Segment>
-                            </Grid.Column>
-                            <Grid.Column>
-                                <Segment circular style={tamanho}>
-                                    <Header as='h2'>
-                                        Música
-                                        <Header.Subheader><Icon name='music'/></Header.Subheader>
-                                    </Header>
-                                </Segment>
-                            </Grid.Column>
-                            <Grid.Column>
-                                <Segment circular style={tamanho}>
-                                    <Header as='h2'>
-                                        Mundo
-                                        <Header.Subheader><Icon name='globe'/></Header.Subheader>
-                                    </Header>
-                                </Segment>
-                            </Grid.Column>
-                        </Grid.Row>
-                        <Grid.Row>
-                            <Grid.Column>
-                                <Segment circular style={tamanho}>
-                                    <Header as='h2'>
-                                        Esportes
-                                        <Header.Subheader><Icon name='football ball'/></Header.Subheader>
-                                    </Header>
-                                </Segment>
-                            </Grid.Column>
-                            <Grid.Column>
-                                <Segment circular style={tamanho}>
-                                    <Header as='h2'>
-                                        Música
-                                        <Header.Subheader><Icon name='music'/></Header.Subheader>
-                                    </Header>
-                                </Segment>
-                            </Grid.Column>
-                            <Grid.Column>
-                                <Segment circular style={tamanho}>
-                                    <Header as='h2'>
-                                        Mundo
-                                        <Header.Subheader><Icon name='globe'/></Header.Subheader>
-                                    </Header>
-                                </Segment>
-                            </Grid.Column>
-                            <Grid.Column>
-                                <Segment circular style={tamanho}>
-                                    <Header as='h2'>
-                                        Música
-                                        <Header.Subheader><Icon name='music'/></Header.Subheader>
-                                    </Header>
-                                </Segment>
-                            </Grid.Column>
-                            <Grid.Column>
-                                <Segment circular style={tamanho}>
-                                    <Header as='h2'>
-                                        Mundo
-                                        <Header.Subheader><Icon name='globe'/></Header.Subheader>
-                                    </Header>
-                                </Segment>
-                            </Grid.Column>
-                        </Grid.Row>
+                    <Grid columns={5} divided>
+                        <Categoria titulo="Futebol" icone="futbol outline"/>
+                        <Categoria titulo="Fórmula 1" icone="trophy"/>
+                        <Categoria titulo="Música" icone="music"/>
+                        <Categoria titulo="Mundo" icone="globe"/>
+                        <Categoria titulo="Animais" icone="paw"/>
+                        <Categoria titulo="Brincadeiras" icone="puzzle piece"/>
+                        <Categoria titulo="Profissões" icone="user md"/>
                     </Grid>
                 </Container>
             </div>
